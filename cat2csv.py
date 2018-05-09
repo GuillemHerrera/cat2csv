@@ -4,25 +4,14 @@
 
 import os
 import csv
-
-
 from catstruct import catstruct # define la estructura de un .CAT
 
-	
-#inputfile=sys.argv[1]
-#basedir=sys.argv[2]
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))+'/'
-#pathFoldCAT = os.path.join(__location__, '')
-#print (__location__)
-#print(pathFoldCAT)
 pathFileCAT = ''
 for file in os.listdir(__location__):
-	#print(file)
 	if '.CAT' in file:
 		pathFileCAT = os.path.join(__location__, file)
 		break
-	#else:
-	#	break
 
 inputfile=pathFileCAT
 basedir=__location__+'Categoria'
