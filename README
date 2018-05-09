@@ -1,48 +1,23 @@
-catastro2postgis
-----------------
-Oscar Fonts - 2011.05.05
+#cat2csv
 
+Forked from oscarfonts/catastro2postgis and upgraded to python3
 
-Pre-requisitos?
+##Requisitos:
+    Python3
 
-gdal/ogr, python, iconv, PostGIS
+Parsea y crea nuevas tablas .csv para cada una de las categorias definidas en los archivos .cat del Cadastro Español
+https://www.sedecatastro.gob.es/ [![Cadastro Español](https://www.sedecatastro.gob.es/)
 
+##Funcionamiento
 
-Como usarlo?
+Sencillo script en Python3 para convertir archivos .CAT a tablas .csv, para cada una de las categorias.
 
-El punto de inicio es ./catastro2postgis.sh
+- Descargar los archivos .py (cat2csv.py y catstruct.py) en una misma carpeta de trabajo
+- Copiar en esta misma carpeta el archivo .CAT que se desee convertir a csv. 
+- Asegurarse que solo exite **un archivo .CAT** en la carpeta de trabajo
+- Ejecutar el script:
+        -linux: python3 cat2csv.py
+        
+- 
 
-Antes de ejecutarlo, debe editarse catastro2postgis.sh para cambiar:
-
- $datadir -- directorio donde estan los .zip y .gz bajados de Catastro, que contienen .shp y .cat respectivamente.
- $dbname -- nombre de la bbdd a crear.
- $dbuser -- usuario con permisos para crear la nueva bbdd.
- $s_srs -- Según el huso.
- $grid -- La rejilla ntv2 de transformación. Cambiar si en Baleares.
-
-
-Que hace?
-
-* Descomprime shapes, los reproyecta a 4326, los carga en PostGIS. Tambien tablas sin geometrias (solo dbf).
-* Descomprime .cat, recodifica a UTF-8, lo convierte a .csv, y lo carga en PostGIS.
-* Carga una serie de diccionarios con:
-   - tipos de via (en español y catalán),
-   - los tipos de construccion,
-   - los usos de inmuebles,
-   - las descripciones TTGGSS.
-* Crea vistas más chulas:
-   - ejes_nombre: añade nombres de vía a "ejes".
-   - construcciones: añade direcciones postales a "constru".
-* Bonus Pack: Conjunto de simbolizaciones SLD para: elempun, elemtex, elemlin, limites, construcciones y ejes_nombre.
-
-
-Que falta por hacer?
-
-* Establecer mapeo de elementos catastro vs. tags OSM, y aplicar gdal2osm y/o catastreitor
-* Potencialmente, de algunos tipos de explotación de las subparcelas de rústica pueden deducirse usos del suelo
-
-
-Otros usos?
-
-Tambien se puede convertir solamente el formato .cat a .csv con cat2csv.py
-
+Ya podeis trabajar con los datos alfanumericos de cadastro en vuestro GisDesktop preferido!! (Siempre mejor si és en QGIS!! :) )
