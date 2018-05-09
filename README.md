@@ -14,9 +14,7 @@ Sencillo script en Python3 para convertir archivos .CAT a tablas .csv, para cada
 - Descargar los archivos .py (cat2csv.py y catstruct.py) en una misma carpeta de trabajo
 - Copiar en esta misma carpeta el archivo .CAT que se desee convertir a csv. 
 - Asegurarse que solo exite **un archivo .CAT** en la carpeta de trabajo
-- Ejecutar el script, en consola de comandos desde la carpeta de trabajo:
-    linux: python3 cat2csv.py
-
+- Ejecutar el script, en consola de comandos desde la carpeta de trabajo: "Linux:python3 cat2csv.py"
 
 Ya podeis trabajar con los datos alfanumericos de cadastro en vuestro GisDesktop preferido!! 
 Siempre mejor si és en QGIS!! :) 
