@@ -5,8 +5,7 @@ Forked from oscarfonts/catastro2postgis and upgraded to python3
 ## Requisitos:
 Python3
 
-Parsea y crea nuevas tablas .csv para cada una de las categorias definidas en los archivos .cat del Cadastro Español
-https://www.sedecatastro.gob.es/ [![Cadastro Español](https://www.sedecatastro.gob.es/)
+Parsea y crea nuevas tablas .csv para cada una de las categorias definidas en los archivos .cat del ![Cadastro Español](https://www.sedecatastro.gob.es/)
 
 ## Funcionamiento
 
