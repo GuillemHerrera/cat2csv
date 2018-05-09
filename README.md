@@ -1,14 +1,14 @@
-#cat2csv
+# cat2csv
 
 Forked from oscarfonts/catastro2postgis and upgraded to python3
 
-##Requisitos:
+## Requisitos:
 Python3
 
 Parsea y crea nuevas tablas .csv para cada una de las categorias definidas en los archivos .cat del Cadastro Español
 https://www.sedecatastro.gob.es/ [![Cadastro Español](https://www.sedecatastro.gob.es/)
 
-##Funcionamiento
+## Funcionamiento
 
 Sencillo script en Python3 para convertir archivos .CAT a tablas .csv, para cada una de las categorias.
 
@@ -19,4 +19,5 @@ Sencillo script en Python3 para convertir archivos .CAT a tablas .csv, para cada
         -linux: python3 cat2csv.py
 
 
-Ya podeis trabajar con los datos alfanumericos de cadastro en vuestro GisDesktop preferido!! (Siempre mejor si és en QGIS!! :) )
+Ya podeis trabajar con los datos alfanumericos de cadastro en vuestro GisDesktop preferido!! 
+Siempre mejor si és en QGIS!! :) 
